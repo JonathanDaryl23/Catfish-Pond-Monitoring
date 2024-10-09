@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TurbidityActivity">
+
+    <TextView
+        android:id="@+id/turbidityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/turbidity"
+        android:textColor="@color/lavender"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/actTurbidity"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/turbidity" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentStart="true"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardElevation="20dp"
+            app:cardCornerRadius="20dp"
+            android:layout_below="@id/button_back">
+
+            <!-- RecyclerView to show history -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_turbidity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:clipToPadding="false"
+                android:scrollbars="vertical"/>
+        </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

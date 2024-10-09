@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Catfish Pond Monitoring</string>
+    <string name="turbidity">Turbidity</string>
+</resources>
